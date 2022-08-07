@@ -8,7 +8,7 @@ public class GameManager : MonoBehaviour
     public GameObject AdManager;
 
     private void Start() {
-        ShowRewardedAd();
+        ShowInterstitialAd();
         //show rewarded ad every 30 seconds
         InvokeRepeating("ShowRewardedAd", 0, 30);
     }
@@ -17,12 +17,6 @@ public class GameManager : MonoBehaviour
     void Update()
     {
         ShowRewardedAd();
-    }
-
-    //show banner ad
-    public void ShowBannerAd()
-    {
-        AdManager.GetComponent<BannerAd>().ShowBannerAd();
     }
 
     //show interstitial ad
