@@ -10,10 +10,7 @@ public class GameManager : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        while (true)
-        {
-            KeepShowingAds();
-        }
+        KeepShowingAds();
     }
 
     //keep showing ads
