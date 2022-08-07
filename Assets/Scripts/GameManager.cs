@@ -10,13 +10,7 @@ public class GameManager : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        KeepShowingAds();
-    }
-
-    //keep showing ads
-    public void KeepShowingAds()
-    {
-        AdManager.GetComponent<RewardedAd>().ShowAd();
+        ShowRewardedAd();
     }
 
     //show banner ad
