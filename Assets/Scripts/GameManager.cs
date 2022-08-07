@@ -22,12 +22,6 @@ public class GameManager : MonoBehaviour
         AdManager.GetComponent<RewardedAd>().ShowAd();
     }
 
-    //show banner ad
-    public void ShowBannerAd()
-    {
-        AdManager.GetComponent<BannerAd>().ShowAd();
-    }
-
     //show interstitial ad
     public void ShowInterstitialAd()
     {
