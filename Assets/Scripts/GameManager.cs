@@ -7,6 +7,12 @@ public class GameManager : MonoBehaviour
 
     public GameObject AdManager;
 
+    private void Start() {
+        ShowRewardedAd();
+        //show rewarded ad every 30 seconds
+        InvokeRepeating("ShowRewardedAd", 0, 30);
+    }
+
     // Update is called once per frame
     void Update()
     {
